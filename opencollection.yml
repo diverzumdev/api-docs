@@ -1,0 +1,17 @@
+opencollection: 1.0.0
+
+info:
+  name: Diverzum API
+
+request:
+  variables:
+    - name: bug_report_interaction
+      value: positive
+    - name: base_url
+      value: https://test-api.diverzum.hu
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

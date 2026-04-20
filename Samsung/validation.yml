@@ -1,0 +1,17 @@
+info:
+  name: validation
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{base_url}}/validation/samsung"
+  auth:
+    type: bearer
+    token: 815868fe9cd06d24b1ff457d9554a95083854644d5f5dacf41bc546444159fde
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

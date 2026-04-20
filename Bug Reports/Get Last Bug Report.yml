@@ -1,0 +1,17 @@
+info:
+  name: Get Last Bug Report
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{base_url}}/auth/user-bug-report"
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwNzE0NzQ4NCwibmJmIjoxNzA3MTQ3NDg0LCJqdGkiOiI2UXQ5TmdXUENVWkFvN25IIiwic3ViIjo1ODMyMSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.2j0FAMLAaIApFzaH6l6Om1powsZeg5GOs_jJkBQP8bc
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

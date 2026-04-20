@@ -1,0 +1,24 @@
+info:
+  name: updateStatus
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{base_url}}/yettel/status"
+  body:
+    type: multipart-form
+    data:
+      - name: user_id
+        type: text
+        value: MTg3NTEy
+      - name: new_status
+        type: text
+        value: checkout_started
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

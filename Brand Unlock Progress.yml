@@ -1,0 +1,19 @@
+info:
+  name: Brand Unlock Progress
+  type: http
+  seq: 13
+
+http:
+  method: GET
+  url: "{{base_url}}/brand-unlock-progress"
+  headers:
+    - name: ""
+      value: ""
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

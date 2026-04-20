@@ -1,0 +1,38 @@
+info:
+  name: Deeplink Log
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{base_url}}/deeplinkLog"
+  body:
+    type: json
+    data: "{\r
+
+      \    \r
+
+      \    \"target_type\": \"discount\",\r
+
+      \    \"target_id\": 21,\r
+
+      \    \"utm_source\": \"src\",\r
+
+      \    \"utm_medium\": \"paid_social\",\r
+
+      \    \"utm_campaign\": \"camp\",\r
+
+      \    \"utm_content\": \"cont\",\r
+
+      \    \"utm_term\": \"term\",\r
+
+      \    \"redirect_type\": \"desktop\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

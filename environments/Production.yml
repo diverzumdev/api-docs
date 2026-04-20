@@ -1,0 +1,10 @@
+name: Production
+variables:
+  - name: base_url
+    value: https://api.diverzum.hu/api
+  - name: qr_api_url
+    value: https://qr-api.diverzum.hu/api
+  - name: base_url_v2
+    value: https://api.diverzum.hu/api/v2
+  - name: token
+    value: ""

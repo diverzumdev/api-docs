@@ -1,0 +1,23 @@
+info:
+  name: Subscribe
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{base_url}}/subscribe"
+  body:
+    type: multipart-form
+    data:
+      - name: email
+        type: text
+        value: kov.laszlo88@gmail.com
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcxNTA5MTY1MywibmJmIjoxNzE1MDkxNjUzLCJqdGkiOiJ4ZmJxVE1xNzRqVVE3dFI4Iiwic3ViIjo1ODMyMSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bl6H93i8ImbrUNt9gMEiQXPm61g_4HLjRZL0JCwfoAc
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,21 @@
+info:
+  name: Brands
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{base_url}}/auth/brands"
+  headers:
+    - name: region
+      value: en
+      disabled: true
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3N0YWdlLWFwaS5kaXZlcnp1bS5odS9hcGkvYXV0aC9sb2dpbiIsImlhdCI6MTc0NTMyMjIxOCwibmJmIjoxNzQ1MzIyMjE4LCJqdGkiOiJDaHdScThzWHhmY3NvbVpYIiwic3ViIjoiNTg2MjUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.TPy3ZVZmIbzQ0a-U0pbW32dW7w5prJywk4hpOMBo78A
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

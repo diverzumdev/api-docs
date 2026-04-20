@@ -1,0 +1,21 @@
+info:
+  name: Unsubscribe
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/unsubscribe"
+  body:
+    type: multipart-form
+    data:
+      - name: email
+        type: text
+        value: kov.laszlo88@gmail.com
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

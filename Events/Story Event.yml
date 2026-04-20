@@ -1,0 +1,30 @@
+info:
+  name: Story Event
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/auth/story-event?user_id=58321&story_id=1&name=main_page_click&session=123123123"
+  params:
+    - name: user_id
+      value: "58321"
+      type: query
+    - name: story_id
+      value: "1"
+      type: query
+    - name: name
+      value: main_page_click
+      type: query
+    - name: session
+      value: "123123123"
+      type: query
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

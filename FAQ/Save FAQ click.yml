@@ -1,0 +1,27 @@
+info:
+  name: Save FAQ click
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/auth/faq-click-logs"
+  body:
+    type: multipart-form
+    data:
+      - name: user_id
+        type: text
+        value: "1"
+      - name: faq_id
+        type: text
+        value: "1"
+      - name: discount_id
+        type: text
+        value: "1"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

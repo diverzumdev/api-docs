@@ -1,0 +1,20 @@
+info:
+  name: Search Log
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{base_url}}/search-log"
+  body:
+    type: form-urlencoded
+    data:
+      - name: query
+        value: teszt query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

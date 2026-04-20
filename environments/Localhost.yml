@@ -1,0 +1,10 @@
+name: Localhost
+variables:
+  - name: base_url
+    value: http://localhost:8001/api
+  - secret: true
+    name: token
+  - name: qr_api_url
+    value: http://localhost:8000/api
+  - name: base_url_v2
+    value: http://localhost:8001/api/v2

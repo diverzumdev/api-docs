@@ -1,0 +1,7 @@
+info:
+  name: FAQ
+  type: folder
+  seq: 7
+
+request:
+  auth: inherit
