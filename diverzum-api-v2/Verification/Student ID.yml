@@ -1,0 +1,28 @@
+info:
+  name: Student ID
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{base_url_v2}}/auth/verification/student-id"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"student_id\": 1111111111,\r
+
+      \    \"gender\": \"m\",\r
+
+      \    \"birthdate\": \"2000-01-01\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

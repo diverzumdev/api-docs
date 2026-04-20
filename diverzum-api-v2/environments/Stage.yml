@@ -1,0 +1,10 @@
+name: Stage
+variables:
+  - name: base_url
+    value: https://stage-api.diverzum.hu/api
+  - name: base_url_v2
+    value: https://stage-api.diverzum.hu/api/v2
+  - name: learning_region_id
+    value: "1"
+  - name: token
+    value: ""

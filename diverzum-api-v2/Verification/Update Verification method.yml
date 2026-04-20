@@ -1,0 +1,24 @@
+info:
+  name: Update Verification method
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{base_url_v2}}/auth/user/verification_method"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"verification_method_id\": 2\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

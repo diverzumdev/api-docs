@@ -1,0 +1,20 @@
+info:
+  name: University email - code
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{base_url_v2}}/auth/verification/university-code"
+  body:
+    type: json
+    data: "{\r\n    \"code\": \"EYLTPM85\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

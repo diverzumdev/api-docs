@@ -1,0 +1,12 @@
+name: Localhost - Bali
+variables:
+  - name: base_url
+    value: http://api.diverzum.test/api
+  - name: token
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpLmRpdmVyenVtLnRlc3QvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3NTYzMDAwNzEsIm5iZiI6MTc1NjMwMDA3MSwianRpIjoiTFlRVnZWc1YxSEZWQXY3SSIsInN1YiI6IjE4NzUxMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.8TAhn7Y37Eq0FY-rPRyJzz_SuELVEGcMEoSunJVfqT0
+  - name: base_url_v2
+    value: http://api.diverzum.test/api/v2
+  - name: learning_region_id
+    value: "1"
+  - name: token2
+    value: ""

@@ -1,0 +1,28 @@
+info:
+  name: University email
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{base_url_v2}}/auth/verification/university-email"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"email\": \"\",\r
+
+      \    \"gender\": \"m\",\r
+
+      \    \"birthdate\": \"2000-01-01\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

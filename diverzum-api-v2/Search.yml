@@ -1,0 +1,24 @@
+info:
+  name: Search
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{base_url_v2}}/search?query=spar"
+  params:
+    - name: query
+      value: spar
+      type: query
+  body:
+    type: text
+    data: ""
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
